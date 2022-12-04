@@ -3,13 +3,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="dist/img/favicon_io/site.webmanifest">
+
+    <!-- feathericon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <title>Document</title>
     <link rel="stylesheet" href="/dist/output.css">
-    <script src="https://unpkg.com/feather-icons"></script>
 </head>
+<body>
     <!-- section navbar start -->
         <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
             <div class="container">
@@ -24,7 +34,7 @@
                             <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                         </button>
                         <nav id="nav-menu" class="hidden absolute bg-white shadow-lg max-w-[230px] w-full right-3 top-full rounded-lg lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
-                            <ul class="block lg:flex items-center font-inter py-4">
+                            <ul class="block lg:flex items-center font-poppins py-4">
                                 <li class="group box-border lg:h-24 flex items-center"><a href="#beranda" class="text-base text-dark py-2 mx-6 flex group-hover:text-primary lg:group-hover:border-b-4 lg:group-hover:border-indigo-500 transition-all duration-200 "><i data-feather="home" class="mr-3 lg:hidden"></i>Beranda</a></li>
                                 <li class="group box-border lg:h-24 flex items-center"><a href="#tentang" class="text-base text-dark py-2 mx-6 flex group-hover:text-primary lg:group-hover:border-b-4 lg:group-hover:border-indigo-500 transition-all duration-200"><i data-feather="info" class="mr-3 lg:hidden"></i>Tentang</a></li>
                                 <li class="group box-border lg:h-24 flex items-center"><a href="#cabang" class="text-base text-dark py-2 mx-6 flex group-hover:text-primary lg:group-hover:border-b-4 lg:group-hover:border-indigo-500 transition-all duration-200"><i data-feather="briefcase" class="mr-3 lg:hidden"></i>Cabang</a></li>
@@ -39,19 +49,19 @@
     <!-- section navbar end -->
 
     <!-- section homepage start -->
-        <div class="container mt-20 md:mb-96 xl:mb-40 mb-20 xl:pl-0">
+        <div class="container mt-28 md:mb-96 xl:mb-40 mb-20">
             <div class="flex flex-col lg:flex-row w-12/12">
-                <div class="pt-16 font-inter md:pl-10">
+                <div class="pt-10 font-poppins">
                     <div class="my-10">
-                        <h1 class="font-extrabold text-4xl md:text-6xl xl:text-6xl my-4 w-full">Temukan solusi mata kamu dan pilih sesuai gaya kamu</h1>
-                        <p class="mt-4 font-normal text-slate-500 text-sm lg:text-base">Perbaiki penglihatan mata kamu agar mata terjaga dengan pilihan yang tepat.<br> Optik Rahmah mempunyai solusi buat kamu dengan berbagai produk yang tersedia</p>
+                        <h1 class="font-extrabold text-4xl md:text-6xl my-4 w-full">Temukan solusi mata kamu dan pilih sesuai gaya kamu</h1>
+                        <p class="mt-4 font-normal text-seconday text-sm lg:text-base">Perbaiki penglihatan mata kamu agar mata terjaga dengan pilihan yang tepat.<br> Optik Rahmah mempunyai solusi buat kamu dengan berbagai produk yang tersedia</p>
                     </div>
                     <div class=" bg-white w-full">
-                        <div class="p-4 md:rounded-xl rounded-lg shadow-lg xl:shadow-sm md:w-10/12 md:absolute bg-white md:max-w-6xl sm:max-w-4xl">
-                            <div class="md:flex font-inter">
+                        <div class="p-4 md:rounded-xl rounded-lg shadow-lg md:w-10/12 md:absolute bg-white md:max-w-6xl sm:max-w-4xl">
+                            <div class="md:flex font-poppins">
                                 <div class="flex flex-col">
                                     <h3 class="font-semibold text-xl md:text-3xl md:p-3 ml-3 border-l-indigo-500 border-l-4 mb-3 pl-3 mr-10 md:border-none">Pilih Lokasi</h3>
-                                    <a href="cabang.html" class="inline-block pl-3 mb-5 mt-2 py-3 px-3 bg-indigo-100 w-44 rounded-lg md:ml-4">Temukan lokasi <i data-feather="arrow-right" class="inline text-slate-400 "></i></a>
+                                    <a href="cabang.html" class="inline-block pl-3 mb-5 mt-2 py-3 px-3 bg-indigo-100 w-48 rounded-lg md:m-4">Temukan lokasi  <i data-feather="arrow-right" class="inline text-slate-400 "></i></a>
                                 </div>
                                 <div x-data="{ openTab: 1, activeClasses: 'rounded-lg bg-slate-200 text-blue-700 md:border-b-indigo-500 md:border-b-4 md:pb-2 md:rounded-none md:bg-white', inactiveClasses: 'text-slate-500 hover:text-blue-800'}" class="">
                                     <ul class="flex flex-wrap" id="lokasi">
@@ -79,70 +89,69 @@
                                         <a :class="openTab === 7 ? activeClasses : inactiveClasses" class="bg-white border-slate-600  inline-block hover:bg-slate-200 hover:text-blue-700 hover:rounded-lg py-2 px-4 font-semibold group-hover:cursor-pointer">Lengkong</a>
                                     </li>
                                     </ul>
-                                    <div class="w-full pt-4">
+                                    <div class="w-full">
                                         <div x-show="openTab === 1">
                                             <div class="w-full">
                                                 <div class="flex">
                                                     <div class="w-full md:flex flex-wrap">
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto ">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300 ">
                                                                 <i data-feather="map-pin" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Lokasi</p>
-                                                                <p class="font-semibold text-base inline">Kec.Nganjuk, Kab.Nganjuk</p>
+                                                                <p class="font-semibold text-base inline">Jl. Panglima Sudirman No. 235</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="calendar" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Hari Buka</p>
                                                                 <p class="font-semibold text-base">Senin - Minggu</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="clock" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Jam Buka</p>
                                                                 <p class="font-semibold  text-base">Jam 08.00 - 21.00</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="flex"></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div x-show="openTab === 2">
                                             <div class="w-full">
                                                 <div class="flex">
-                                                    <div class="w-full md:flex">
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                    <div class="w-full md:flex flex-wrap">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300 ">
                                                                 <i data-feather="map-pin" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Lokasi</p>
-                                                                <p class="font-semibold text-base inline">Kec.Kertosono, Kab.Nganjuk</p>
+                                                                <p class="font-semibold text-base inline">Jl. Supriyadi No. 78 Kudu</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="calendar" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Hari Buka</p>
                                                                 <p class="font-semibold text-base">Senin - Minggu</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="clock" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Jam Buka</p>
                                                                 <p class="font-semibold  text-base">Jam 08.00 - 21.00</p>
                                                             </div>
@@ -155,30 +164,30 @@
                                         <div x-show="openTab === 3">
                                             <div class="w-full">
                                                 <div class="flex">
-                                                    <div class="w-full md:flex">
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                    <div class="w-full md:flex flex-wrap">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300 ">
                                                                 <i data-feather="map-pin" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Lokasi</p>
-                                                                <p class="font-semibold text-base ">Kec.Warujayeng, Kab.Nganjuk</p>
+                                                                <p class="font-semibold text-base ">Jl. Ahmad Yani No. 709</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="calendar" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Hari Buka</p>
                                                                 <p class="font-semibold text-base">Senin - Minggu</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="clock" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Jam Buka</p>
                                                                 <p class="font-semibold  text-base">Jam 08.00 - 21.00</p>
                                                             </div>
@@ -191,30 +200,30 @@
                                         <div x-show="openTab === 4">
                                             <div class="w-full">
                                                 <div class="flex">
-                                                    <div class="w-full md:flex">
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                    <div class="w-full md:flex flex-wrap">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300 ">
                                                                 <i data-feather="map-pin" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Lokasi</p>
-                                                                <p class="font-semibold text-base ">Kec.Berbek, Kab.Nganjuk</p>
+                                                                <p class="font-semibold text-base ">Jl. Mayjen Supeno Sengkut</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="calendar" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Hari Buka</p>
                                                                 <p class="font-semibold text-base">Senin - Minggu</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="clock" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Jam Buka</p>
                                                                 <p class="font-semibold  text-base">Jam 08.00 - 21.00</p>
                                                             </div>
@@ -227,30 +236,30 @@
                                         <div x-show="openTab === 5">
                                             <div class="w-full">
                                                 <div class="flex">
-                                                    <div class="w-full md:flex">
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                    <div class="w-full md:flex flex-wrap">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300 ">
                                                                 <i data-feather="map-pin" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Lokasi</p>
-                                                                <p class="font-semibold text-base ">Kec.Rejoso, Kab.Nganjuk</p>
+                                                                <p class="font-semibold text-base ">Ds. Talang (Timur Masjid Talang)</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="calendar" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Hari Buka</p>
                                                                 <p class="font-semibold text-base">Senin - Minggu</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="clock" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Jam Buka</p>
                                                                 <p class="font-semibold  text-base">Jam 08.00 - 21.00</p>
                                                             </div>
@@ -263,30 +272,30 @@
                                         <div x-show="openTab === 6">
                                             <div class="w-full">
                                                 <div class="flex">
-                                                    <div class="w-full md:flex">
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                    <div class="w-full md:flex flex-wrap">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300 ">
                                                                 <i data-feather="map-pin" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Lokasi</p>
-                                                                <p class="font-semibold text-base ">Kec.Gondang, Kab.Nganjuk</p>
+                                                                <p class="font-semibold text-base ">Jl. Bambang Yuwono No. 92-b</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="calendar" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Hari Buka</p>
                                                                 <p class="font-semibold text-base">Senin - Minggu</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="clock" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Jam Buka</p>
                                                                 <p class="font-semibold  text-base">Jam 08.00 - 21.00</p>
                                                             </div>
@@ -299,30 +308,30 @@
                                         <div x-show="openTab === 7">
                                             <div class="w-full">
                                                 <div class="flex">
-                                                    <div class="w-full md:flex">
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                    <div class="w-full md:flex flex-wrap">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300 ">
                                                                 <i data-feather="map-pin" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Lokasi</p>
-                                                                <p class="font-semibold text-base ">Kec.Lengkong, Kab.Nganjuk</p>
+                                                                <p class="font-semibold text-base ">Jl. Merdeka Barat No. 19</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="calendar" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Hari Buka</p>
                                                                 <p class="font-semibold text-base">Senin - Minggu</p>
                                                             </div>
                                                         </div>
-                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2">
+                                                        <div class="flex p-3 rounded-lg shadow-sm border border-slate-100 my-4 group mx-2 sm:w-full lg:w-auto">
                                                             <div class="rounded-full border border-orange-300 flex flex-row p-3 w-12 h-12 group-hover:border-white group-hover:bg-orange-300">
                                                                 <i data-feather="clock" class="text-orange-300 group-hover:text-white"></i>
                                                             </div>
-                                                            <div class="flex flex-col font-inter ml-4 ">
+                                                            <div class="flex flex-col font-poppins ml-4 ">
                                                                 <p class="text-sm text-slate-400">Jam Buka</p>
                                                                 <p class="font-semibold  text-base">Jam 08.00 - 21.00</p>
                                                             </div>
@@ -338,48 +347,173 @@
                         </div>
                     </div>
                 </div>
-                <div class="pt-1 pr-0 hidden xl:block max-w-2xl ml-3">
-                  <img src="/dist/img/hero.jpg" alt="optik-rahmah" class="w-[1200px] max-w-xl">
+                <div class="mt-16 pr-0 hidden xl:block max-w-2xl ml-3">
+                  <img src="/dist/img/hero.jpg" alt="optik-rahmah" class="rounded-xl max-w-2xl mr-[-100px]">
                 </div>
             </div>
         </div>
     <!-- section homepage end -->
 
     <!-- section step-visit start-->
-        <div class="container sm:mt-32">
+        <div class="container md:mt-96 md:pt-48 lg:pt-10 lg:mt-10">
             <div class="bg-gradient-to-tr from-sky-600 to-sky-300 lg:rounded-xl rounded-lg w-full px-5 md:px-10 py-10">
                 <div class="flex flex-col md:flex-row">
                     <h3 class="text-2xl font-bold text-white md:text-3xl lg:w-1/3">Langkah mudah untuk mendapatkan solusimu</h3>
                     <p class="mt-5 lg:mt-0 font-normal text-white lg:w-1/3 items-center">Jika bingung dengan apa yang harus dilakukan ikuti langkah berikut untuk konsultasi dengan Optik Rahmah</p>
                     <div class="lg:w-1/3 my-7 lg:my-0">
-                        <a href="" class="py-3 px-4 font-semibold text-sky-600 bg-white rounded-lg inline sm:block text-center lg:w-72 mx-auto">Ajukan Pertanyaan <i data-feather="arrow-right" class="inline"></i></a>
+                        <a href="" class="py-3 px-4 font-semibold text-sky-600 bg-white rounded-lg inline sm:block text-center lg:w-72 mx-auto sm:mx-4">Ajukan Pertanyaan <i data-feather="arrow-right" class="inline"></i></a>
                     </div>
                 </div>
                 <div class="flex flex-wrap my-3 justify-evenly lg:mt-10">
-                    <div class="flex flex-col bg-white rounded-lg p-5 text-center my-2 sm:w-64 sm:my-4 w-full">
+                    <div class="flex flex-col bg-white rounded-lg p-5 text-center my-2 sm:w-64 sm:my-4 w-56 shadow-md shadow-sky-400">
                         <i data-feather="file-text" class="text-sky-500 mx-auto block w-10 h-10 mb-2"></i>
                         <p class="font-semibold text-xl my-2">Cari Informasi</p>
-                        <p class="text">Temukan masalah yang dialami dan cari informasi yang sesuai</p>
+                        <p class="text-seconday">Temukan masalah yang dialami dan cari informasi yang sesuai</p>
                     </div>
-                    <div class="flex flex-col bg-white rounded-lg p-5 text-center my-2 sm:w-64 sm:my-4 w-full">
+                    <div class="flex flex-col bg-white rounded-lg p-5 text-center my-2 sm:w-64 sm:my-4 w-56 shadow-md shadow-sky-400">
                         <i data-feather="map" class="text-purple-500 mx-auto block w-10 h-10 mb-2"></i>
                         <p class="font-semibold text-xl my-2">Pilih lokasi</p>
-                        <p class="text">Pilih lokasi Optik Rahmah terdekat untuk melakukan konsultasi</p>
+                        <p class="text-seconday">Pilih lokasi Optik Rahmah terdekat untuk melakukan konsultasi</p>
                     </div>
-                    <div class="flex flex-col bg-white rounded-lg p-5 text-center my-2 sm:w-64 sm:my-4 w-full">
+                    <div class="flex flex-col bg-white rounded-lg p-5 text-center my-2 sm:w-64 sm:my-4 w-56 shadow-md shadow-sky-400">
                         <i data-feather="calendar" class="text-red-500 mx-auto block w-10 h-10 mb-2"></i>
                         <p class="font-semibold text-xl my-2">Tentukan jadwal</p>
-                        <p class="text">Tentukan jadwal untuk berkujung ke toko Optik Rahmah</p>
+                        <p class="text-seconday">Tentukan jadwal untuk berkujung ke toko Optik Rahmah</p>
                     </div>
-                    <div class="flex flex-col bg-white rounded-lg p-5 text-center my-2 sm:w-64 sm:my-4 w-full">
+                    <div class="flex flex-col bg-white rounded-lg p-5 text-center my-2 sm:w-64 sm:my-4 w-56 shadow-md shadow-sky-400">
                         <i data-feather="user-check" class="text-orange-500 mx-auto block w-10 h-10 mb-2"></i>
                         <p class="font-semibold text-xl my-2">Konsultasi selesai</p>
-                        <p class="text">Lakukan konsultasi dengan menjelaskan masalah mata yang dialami</p>
+                        <p class="text-seconday">Lakukan konsultasi dengan menjelaskan masalah mata yang dialami</p>
                     </div>
                 </div>
             </div>
         </div>
     <!-- section step-visit end-->
+
+    <!-- section service start -->
+    <div class="container my-20">
+        <div class="flex flex-wrap flex-col lg:flex-row md:flex-nowrap">
+            <div class="flex sm:max-w-3xl">
+                <div class="p-4">
+                    <img src="/dist/img/service.png" alt="service" class="sm:w-[500px] lg:w-auto sm:mx-auto">
+                    <div class="absolute my-[-90px]">
+                        <div class="bg-white rounded-xl border-x-2 border-y-2 border-slate-50 flex shadow-lg w-56 px-2 py-3 group sm:ml-20">
+                            <div class="bg-orange-500 mx-3 border-2 p-1 h-8 w-8 rounded-md ">
+                                <i data-feather="check" class="text-white w-6 h-6"></i>
+                            </div>
+                            <div class="font-medium">
+                                <p class="inline text-lg">Pelayanan Terbaik</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="p-8 text-seconday md:text-lg">
+                        Kami akan melayani dengan pelayan terbaik untuk membantu dalam memberikan solusi kepada pelanggan
+                    </p>
+                </div>
+            </div>
+            <div class="flex md:mt-20 lg:ml-16">
+                <div class="p-4"> 
+                    <div class="font-bold text-2xl md:text-4xl">Kami selalu melakukan pelayanan sesuai prosedur yang tersedia yang mengutamakan kepuasan pelanggan</div>
+                    <div class="py-12">
+                        <div class="flex flex-row my-6">
+                            <div class="w-7 h-7 rounded-full p-1 bg-myorange">
+                                <i data-feather="check" class="text-white w-5"></i>
+                            </div>
+                            <p class="text-seconday mx-4 font-normal text-base sm:text-lg">Pemilihan Kacamata yang berkualitas</p>
+                        </div>
+                        <div class="flex flex-row my-6">
+                            <div class="w-7 h-7 rounded-full p-1 bg-myorange">
+                                <i data-feather="check" class="text-white w-5"></i>
+                            </div>
+                            <p class="text-seconday mx-4 font-normal text-base sm:text-lg inline">Konsultasi sampai masalah selesai</p>
+                        </div>
+                        <div class="flex flex-row my-6">
+                            <div class="w-7 h-7 rounded-full p-1 bg-myorange">
+                                <i data-feather="check" class="text-white w-5"></i>
+                            </div>
+                            <p class="text-seconday mx-4 font-normal text-base sm:text-lg">Pemeriksaan mata dengan teknologi yang ada</p>
+                        </div>
+                        <div class="flex flex-row my-6">
+                            <div class="w-7 h-7 rounded-full p-1 bg-myorange">
+                                <i data-feather="check" class="text-white w-5"></i>
+                            </div>
+                            <p class="text-seconday mx-4 font-normal text-base sm:text-lg">Mengusahakan barang yang diminta untuk ada</p>
+                        </div>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <a href="" class="py-3 px-8 w-44 bg-gradient-to-t font-semibold from-orange-400 via-myorange to-myorange rounded-lg inline text-white">Telusuri Produk <i data-feather="arrow-right" class="inline text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section service end -->
+
+    <!-- section product start -->
+    <div class="container my-20">
+        <div class="flex flex-wrap flex-col lg:flex-row md:flex-nowrap">
+            <div class="flex ">
+                <div class="p-4"> 
+                    <div class="font-bold text-2xl md:text-4xl mb-6">Keunggulan dari Optik Rahmah dalam melayani pelanggan dengan berbagai masalah</div>
+                    <p class="text-seconday mb-5">Untuk mengenal lebih lanjut tentang Optik Rahmah kamu bisa menulusurinya disini</p>
+                    <a href="" class="underline text-indigo-600 font-semibold">Telusuri Optik Rahmah</a>
+                    <div class="flex flex-wrap my-20 justify-center gap-10">
+                        <div class="rounded-lg flex flex-col shadow-lg border border-slate-50 p-7 my-6 w-full sm:w-64">
+                            <div class="rounded-md w-10 h-10 mb-3 border border-slate-50 bg-slate-200 flex items-center justify-center">
+                                <i data-feather="grid" class="grid text-mypurple"></i>
+                            </div>
+                            <div class="font-semibold my-2 text-lg">Produk</div>
+                                <div class="text-seconday">Produk yang ada di Optik Rahmah terjamin dengan kualitasnya. Produk yang disediakan bermacam-macam dengan keluaran terbaru </div>
+                        </div>
+                        <div class="rounded-lg flex flex-col shadow-lg border border-slate-50 p-7 my-6 w-full sm:w-64">
+                            <div class="rounded-md w-10 h-10 mb-3 border border-slate-50 bg-slate-200 flex items-center justify-center">
+                                <i data-feather="server" class="grid text-mypurple"></i>
+                            </div>
+                            <div class="font-semibold my-2 text-lg">Alat Periksa</div>
+                                <div class="text-seconday">Produk yang ada di Optik Rahmah terjamin dengan kualitasnya. Produk yang disediakan bermacam-macam dengan keluaran terbaru </div>
+                        </div>
+                        <div class="rounded-lg flex flex-col shadow-lg border border-slate-50 p-7 my-6 w-full sm:w-64">
+                            <div class="rounded-md w-10 h-10 mb-3 border border-slate-50 bg-slate-200 flex items-center justify-center">
+                                <i data-feather="eye" class="grid text-mypurple"></i>
+                            </div>
+                            <div class="font-semibold my-2 text-lg">Alat Periksa</div>
+                                <div class="text-seconday">Produk yang ada di Optik Rahmah terjamin dengan kualitasnya. Produk yang disediakan bermacam-macam dengan keluaran terbaru </div>
+                        </div>
+                        <div class="rounded-lg flex flex-col shadow-lg border border-slate-50 p-7 my-6 w-full sm:w-64">
+                            <div class="rounded-md w-10 h-10 mb-3 border border-slate-50 bg-slate-200 flex items-center justify-center">
+                                <i data-feather="edit" class="grid text-mypurple"></i>
+                            </div>
+                            <div class="font-semibold my-2 text-lg">Pesan Barang</div>
+                                <div class="text-seconday">Produk yang ada di Optik Rahmah terjamin dengan kualitasnya. Produk yang disediakan bermacam-macam dengan keluaran terbaru </div>
+                        </div>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <a href="" class="py-3 px-8 w-44 bg-gradient-to-t font-semibold from-orange-400 via-myorange to-myorange rounded-lg inline text-white">Telusuri Produk <i data-feather="arrow-right" class="inline text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex sm:max-w-3xl">
+                <div class="p-4">
+                    <img src="/dist/img/product.png" alt="service" class="sm:w-[500px] lg:w-auto sm:mx-auto w-[400px]">
+                    <div class="absolute my-[-90px]">
+                        <div class="bg-white rounded-xl border-x-2 border-y-2 border-slate-50 flex shadow-lg w-64 px-2 py-3 group">
+                            <div class="bg-orange-500 mx-3 border-2 p-1 h-8 w-8 rounded-md ">
+                                <i data-feather="check" class="text-white w-6 h-6"></i>
+                            </div>
+                            <div class="font-medium">
+                                <p class="inline text-lg">Produk Berkualitas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="p-8 text-seconday md:text-lg">
+                        Kami akan melayani dengan pelayan terbaik untuk membantu dalam memberikan solusi kepada pelanggan
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section product end -->
+
     <div class="mb-96"></div>
 
     <!-- javascript start -->

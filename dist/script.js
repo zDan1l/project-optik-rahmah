@@ -1,14 +1,7 @@
 // feather icon
 feather.replace()
 
-// prevent-default
-const close = document.querySelector('#lokasi li a');
 
-close.forEach(function(el){
-    el.addEventListener('click', function(e){
-        e.preventDefault()
-    })
-})
 
 // navbar fixed
 window.onscroll = function(){
@@ -30,4 +23,13 @@ const nav = document.querySelector('#nav-menu');
 hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger-active')
     nav.classList.toggle('hidden');
+})
+
+// prevent-default
+let tombol = document.querySelector('#lokasi li a');
+
+tombol.forEach(function(el){
+    el.addEventListener('click', function(e){
+        e.preventDefault();
+    })
 })

@@ -9,10 +9,13 @@ module.exports = {
       },
       colors: {
         dark: '#0f172a',
-        primary: '#0f562a'
+        seconday: '#64748b',
+        mypurple: '#956FFF',
+        myblue: '#00BDCE',
+        myorange: '#FEB306'
       },
       fontFamily: {
-        inter: ['Inter']
+        poppins: ['Poppins']
       }
     },
   },
