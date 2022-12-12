@@ -13,7 +13,7 @@ window.onscroll = function(){
     }else{
         header.classList.remove('navbar-fixed')
     }
-}
+};
 
 
 // hamburger
@@ -23,13 +23,28 @@ const nav = document.querySelector('#nav-menu');
 hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger-active')
     nav.classList.toggle('hidden');
+});
+
+// faq javascript
+const utama = document.querySelector('#faq');
+const tomb = document.querySelectorAll('#button-faq');
+const deskripsi = document.querySelectorAll('#deskripsi-faq');
+
+tomb.forEach(function(el){
+    el.addEventListener('click', function(e){
+    e.target.parentElement.nextSibling.classList.toggle('tampil');
+    e.classList.toggle('putar');
+    })
 })
 
+
 // prevent-default
-let tombol = document.querySelector('#lokasi li a');
+let tombol = document.querySelectorAll('#lokasi li a');
 
 tombol.forEach(function(el){
     el.addEventListener('click', function(e){
-        e.preventDefault();
+        e.target.preventDefault();
     })
-})
+});
+
+

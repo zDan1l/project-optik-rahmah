@@ -24,3 +24,11 @@
 .hamburger-active > span:nth-child(2){
     @apply scale-0;
 }
+
+.tampil{
+    @apply hidden;
+}
+
+.putar{
+    @apply rotate-180;
+}
