@@ -1520,10 +1520,6 @@ video {
   background-image: url('/dist/img/tetes-7.png');
 }
 
-.bg-\[url\(\'\/dist\/img\/tetes-8\.png\'\)\] {
-  background-image: url('/dist/img/tetes-8.png');
-}
-
 .from-black {
   --tw-gradient-from: #000;
   --tw-gradient-to: rgb(0 0 0 / 0);
@@ -2316,6 +2312,16 @@ video {
     margin-bottom: 1.25rem;
   }
 
+  .md\:my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .md\:my-32 {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
   .md\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -2650,14 +2656,6 @@ video {
     margin-top: 11rem;
   }
 
-  .lg\:mt-\[\] {
-    margin-top: ;
-  }
-
-  .lg\:mt-\[120px\] {
-    margin-top: 120px;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -2700,6 +2698,10 @@ video {
 
   .lg\:h-\[300px\] {
     height: 300px;
+  }
+
+  .lg\:h-\[340px\] {
+    height: 340px;
   }
 
   .lg\:h-\[190px\] {
@@ -2960,16 +2962,12 @@ video {
     display: flex;
   }
 
-  .xl\:h-\[540px\] {
-    height: 540px;
+  .xl\:h-\[500px\] {
+    height: 500px;
   }
 
   .xl\:h-52 {
     height: 13rem;
-  }
-
-  .xl\:h-\[500px\] {
-    height: 500px;
   }
 
   .xl\:w-\[550px\] {
@@ -3074,8 +3072,9 @@ video {
     line-height: 1;
   }
 
-  .xl\:text-\[55px\] {
-    font-size: 55px;
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .xl\:text-4xl {
