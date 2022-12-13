@@ -1,7 +1,8 @@
 // feather icon
 feather.replace();
 
-
+// AOS
+AOS.init();
 
 // navbar fixed
 window.onscroll = function(){

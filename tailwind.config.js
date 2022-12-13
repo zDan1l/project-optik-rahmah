@@ -12,7 +12,8 @@ module.exports = {
         seconday: '#64748b',
         mypurple: '#956FFF',
         myblue: '#00BDCE',
-        myorange: '#FEB306'
+        myorange: '#FEB306',
+        myblue2: '#86EDF7'
       },
       fontFamily: {
         poppins: ['Poppins']

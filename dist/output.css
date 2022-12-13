@@ -1576,21 +1576,15 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-mypurple {
+  --tw-gradient-from: #956FFF;
+  --tw-gradient-to: rgb(149 111 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-purple-100 {
   --tw-gradient-from: #f3e8ff;
   --tw-gradient-to: rgb(243 232 255 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-sky-300 {
-  --tw-gradient-from: #7dd3fc;
-  --tw-gradient-to: rgb(125 211 252 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-sky-400 {
-  --tw-gradient-from: #38bdf8;
-  --tw-gradient-to: rgb(56 189 248 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1609,12 +1603,17 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #a855f7, var(--tw-gradient-to);
 }
 
+.via-mypurple {
+  --tw-gradient-to: rgb(149 111 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #956FFF, var(--tw-gradient-to);
+}
+
 .to-transparent {
   --tw-gradient-to: transparent;
 }
 
-.to-teal-300 {
-  --tw-gradient-to: #5eead4;
+.to-teal-500 {
+  --tw-gradient-to: #14b8a6;
 }
 
 .to-sky-300 {
@@ -1629,12 +1628,16 @@ video {
   --tw-gradient-to: #c084fc;
 }
 
-.to-teal-500 {
-  --tw-gradient-to: #14b8a6;
+.to-myblue2 {
+  --tw-gradient-to: #86EDF7;
 }
 
-.to-teal-600 {
-  --tw-gradient-to: #0d9488;
+.to-myblue {
+  --tw-gradient-to: #00BDCE;
+}
+
+.to-teal-400 {
+  --tw-gradient-to: #2dd4bf;
 }
 
 .bg-cover {
@@ -1652,11 +1655,6 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .object-cover {
@@ -1879,6 +1877,10 @@ video {
   font-weight: 500;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
@@ -1902,6 +1904,10 @@ video {
 .text-seconday {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.text-transparent {
+  color: transparent;
 }
 
 .text-slate-400 {
@@ -1962,10 +1968,6 @@ video {
 .text-myblue {
   --tw-text-opacity: 1;
   color: rgb(0 189 206 / var(--tw-text-opacity));
-}
-
-.text-transparent {
-  color: transparent;
 }
 
 .underline {
