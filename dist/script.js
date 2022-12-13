@@ -1,5 +1,5 @@
 // feather icon
-// feather.replace();
+feather.replace();
 
 
 
