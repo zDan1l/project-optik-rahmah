@@ -31,7 +31,8 @@ const tomb = document.querySelectorAll('#button-faq');
 
 for (let i = 0; i < tomb.length; i++) {
     tomb[i].addEventListener('click', function  (){
-        tomb[i].parentElement.nextElementSibling.classList.toggle('tampil')
+        tomb[i].parentElement.nextElementSibling.classList.toggle('tampil');
+        tomb[i].classList.toggle('putar')
     });
 }
 
