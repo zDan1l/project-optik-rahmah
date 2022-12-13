@@ -1,5 +1,5 @@
 // feather icon
-feather.replace()
+// feather.replace();
 
 
 
@@ -26,17 +26,13 @@ hamburger.addEventListener('click', function() {
 });
 
 // faq javascript
-const utama = document.querySelector('#faq');
 const tomb = document.querySelectorAll('#button-faq');
-const deskripsi = document.querySelectorAll('#deskripsi-faq');
 
-tomb.forEach(function(el){
-    el.addEventListener('click', function(e){
-    e.target.parentElement.nextSibling.classList.toggle('tampil');
-    e.classList.toggle('putar');
-    })
-})
-
+for (let i = 0; i < tomb.length; i++) {
+    tomb[i].addEventListener('click', function  (){
+        tomb[i].parentElement.nextElementSibling.classList.toggle('tampil')
+    });
+}
 
 // prevent-default
 let tombol = document.querySelectorAll('#lokasi li a');
