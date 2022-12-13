@@ -1,8 +1,7 @@
 // feather icon
 feather.replace();
 
-// AOS
-AOS.init();
+
 
 // navbar fixed
 window.onscroll = function(){
@@ -25,6 +24,7 @@ hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger-active')
     nav.classList.toggle('hidden');
 });
+
 
 // faq javascript
 const tomb = document.querySelectorAll('#button-faq');
