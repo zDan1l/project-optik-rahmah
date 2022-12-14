@@ -874,6 +874,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1966,6 +1970,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-sky-400 {
   --tw-shadow-color: #38bdf8;
   --tw-shadow: var(--tw-shadow-colored);
@@ -2297,6 +2307,10 @@ video {
     width: 100%;
   }
 
+  .sm\:w-80 {
+    width: 20rem;
+  }
+
   .sm\:w-60 {
     width: 15rem;
   }
@@ -2305,8 +2319,8 @@ video {
     width: 1.75rem;
   }
 
-  .sm\:w-48 {
-    width: 12rem;
+  .sm\:w-52 {
+    width: 13rem;
   }
 
   .sm\:w-\[500px\] {
@@ -2315,10 +2329,6 @@ video {
 
   .sm\:w-64 {
     width: 16rem;
-  }
-
-  .sm\:w-52 {
-    width: 13rem;
   }
 
   .sm\:max-w-4xl {
@@ -2497,6 +2507,10 @@ video {
 
   .md\:w-80 {
     width: 20rem;
+  }
+
+  .md\:w-60 {
+    width: 15rem;
   }
 
   .md\:max-w-\[990px\] {
@@ -2895,6 +2909,14 @@ video {
     width: 380px;
   }
 
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[220px\] {
+    width: 220px;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
   }
@@ -3002,6 +3024,11 @@ video {
     line-height: 1.25rem;
   }
 
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3062,6 +3089,14 @@ video {
     margin-top: 12rem;
   }
 
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .xl\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -3106,20 +3141,16 @@ video {
     width: 14rem;
   }
 
-  .xl\:w-40 {
-    width: 10rem;
+  .xl\:w-60 {
+    width: 15rem;
   }
 
   .xl\:w-\[600px\] {
     width: 600px;
   }
 
-  .xl\:w-6 {
-    width: 1.5rem;
-  }
-
-  .xl\:w-60 {
-    width: 15rem;
+  .xl\:w-96 {
+    width: 24rem;
   }
 
   .xl\:max-w-6xl {
@@ -3165,11 +3196,6 @@ video {
   .xl\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .xl\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .xl\:text-lg {
