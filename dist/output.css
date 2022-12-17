@@ -1412,8 +1412,8 @@ video {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\/dist\/img\/lokasi-optik-berbek\.jpg\'\)\] {
-  background-image: url('/dist/img/lokasi-optik-berbek.jpg');
+.bg-\[url\(\'dist\/img\/lokasi-optik-nganjuk\.jpg\'\)\] {
+  background-image: url('dist/img/lokasi-optik-nganjuk.jpg');
 }
 
 .bg-\[url\(\'\/dist\/img\/lokasi-optik-warujayeng\.jpg\'\)\] {
