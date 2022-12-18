@@ -1030,6 +1030,10 @@ video {
   width: 3rem;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -1412,8 +1416,8 @@ video {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'dist\/img\/lokasi-optik-nganjuk\.jpg\'\)\] {
-  background-image: url('dist/img/lokasi-optik-nganjuk.jpg');
+.bg-\[url\(\'\/dist\/img\/lokasi-optik-berbek\.jpg\'\)\] {
+  background-image: url('/dist/img/lokasi-optik-berbek.jpg');
 }
 
 .bg-\[url\(\'\/dist\/img\/lokasi-optik-warujayeng\.jpg\'\)\] {
@@ -1641,6 +1645,10 @@ video {
      object-position: top;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1655,10 +1663,6 @@ video {
 
 .p-1 {
   padding: 0.25rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .p-7 {
@@ -2031,6 +2035,10 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.\[e\:\7F\116 9\1E 69\FFFD\FFFD\1D\FFFD\] {
+  e: Ė969���;
 }
 
 .navbar-fixed {
